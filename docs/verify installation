@@ -1,2 +1,22 @@
 python -m src.main --version
 docker --version
+System Requirements
+Python 3.8 or higher
+Docker 20.10 or higher
+4GB RAM minimum
+Internet connection for CVE database updates
+Troubleshooting
+Docker not found
+Copy# Install Docker from https://docs.docker.com/get-docker/
+docker --version
+Permission denied on Linux
+Copy# Add user to docker group
+sudo usermod -aG docker $USER
+newgrp docker
+Python version issue
+Copy# Check version
+python --version
+
+# If using Python 2, try:
+python3 --version
+python3 -m venv venv

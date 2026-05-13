@@ -1,0 +1,9 @@
+# Python 3.8+
+python -m venv venv
+
+# Activate venv
+# On Linux/Mac:
+source venv/bin/activate
+
+# On Windows:
+venv\Scripts\activate

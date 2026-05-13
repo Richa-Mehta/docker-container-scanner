@@ -1,0 +1,43 @@
+# Core Dependencies
+docker==7.1.0
+requests==2.31.0
+python-dateutil==2.8.2
+
+# Vulnerability Database
+pyyaml==6.0.1
+sqlalchemy==2.0.23
+
+# Analysis & Processing
+scapy==2.5.0
+pydantic==2.5.0
+defusedxml==0.0.1
+
+# Secret Detection
+entropy==0.0.3
+regex==2023.12.25
+
+# Report Generation
+jinja2==3.1.2
+python-json-logger==2.0.7
+
+# CLI & Utilities
+click==8.1.7
+colorama==0.4.6
+tabulate==0.9.0
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Code Quality
+pylint==3.0.3
+black==23.12.1
+flake8==6.1.0
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.3
+
+# Security & Validation
+cryptography==41.0.7

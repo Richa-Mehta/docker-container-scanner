@@ -4,16 +4,16 @@ requests==2.31.0
 python-dateutil==2.8.2
 
 # Vulnerability Database
-pyyaml==6.0.1
+pyyaml==6.0.3
 sqlalchemy==2.0.23
 
 # Analysis & Processing
-scapy==2.5.0
+scapy==2.7.0
 pydantic==2.5.0
-defusedxml==0.0.1
+defusedxml==0.7.1
 
 # Secret Detection
-entropy==0.0.3
+scipy==1.13.0
 regex==2023.12.25
 
 # Report Generation
@@ -37,7 +37,7 @@ flake8==6.1.0
 
 # Data Processing
 pandas==2.1.4
-numpy==1.26.3
+numpy==1.26.4
 
 # Security & Validation
 cryptography==41.0.7

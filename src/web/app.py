@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 from src.core.scanner import Scanner
 
@@ -7,6 +8,14 @@ app = FastAPI(
     title="SentinelScan API",
     version="1.0.0",
     description="Container Security Scanner Backend",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],      # Development only
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 scanner = Scanner()

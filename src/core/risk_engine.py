@@ -82,19 +82,18 @@ class RiskEngine:
         Returns score between 0 and 100.
         """
 
-        score = self.maximum_score
+        
+        risk = (
+            counts["critical"] * self.weights["critical"]
+            + counts["high"] * self.weights["high"]
+            + counts["medium"] * self.weights["medium"]
+            + counts["low"] * self.weights["low"]
+            + counts["info"] * self.weights["info"]
+        )
 
-        score -= counts["critical"] * self.weights["critical"]
-        score -= counts["high"] * self.weights["high"]
-        score -= counts["medium"] * self.weights["medium"]
-        score -= counts["low"] * self.weights["low"]
-        score -= counts["info"] * self.weights["info"]
-
-        if score < 0:
-            score = 0
+        score = 100 / (1 + risk / 100)
 
         return round(score)
-
     # -----------------------------------------------------
     # Risk Level
     # -----------------------------------------------------

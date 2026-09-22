@@ -41,4 +41,4 @@ def health():
 
 @app.post("/scan/image")
 def scan_image(request: ImageRequest):
-    return scanner.scan_image(request.image)
+    return scanner.scan_complete(request.image)
